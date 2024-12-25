@@ -43,3 +43,9 @@ function Person1() {}
 Person.prototype.name = "Viki";
 let object4 = new Person1();
 console.log("object4:", object4);
+
+// Object's assign method
+const orgObject = { company: "XYZ Corp" };
+const carObject = { name: "Toyota" };
+const staff = Object.assign({}, orgObject, carObject);
+console.log("staff", staff);
