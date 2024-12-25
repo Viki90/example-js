@@ -1,3 +1,4 @@
+// ways to create objects in JavaScript
 // Object literal syntax
 let object = {
   name: "Viki",
@@ -49,3 +50,19 @@ const orgObject = { company: "XYZ Corp" };
 const carObject = { name: "Toyota" };
 const staff = Object.assign({}, orgObject, carObject);
 console.log("staff", staff);
+
+// ES6 Class syntax
+class Person2 {
+  constructor(name) {
+    this.name = name;
+  }
+}
+
+let object5 = new Person2("Viki");
+console.log("object5:", object5);
+
+// Singleton pattern
+let object6 = new (function () {
+  this.name = "Viki";
+})();
+console.log("object6:", object6);
